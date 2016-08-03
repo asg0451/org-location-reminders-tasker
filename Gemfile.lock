@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (9.0.5)
+    org-ruby (0.9.12)
+      rubypants (~> 0.2)
+    rubypants (0.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug
+  org-ruby
+
+BUNDLED WITH
+   1.12.3
