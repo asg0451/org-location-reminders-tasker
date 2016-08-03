@@ -12,7 +12,9 @@ output = {}
 headlines.each do |h|
   next if h.tags.length == 0
   h.tags.each do |t|
-    output[locationsMap[t]] = h.headline_text
+    if output[locationsMap[t]] then output[locationsMap[t]] << h.headline_text
+    else output[locationsMap[t]] = [h.headline_text]
+    end
   end
 end
 
