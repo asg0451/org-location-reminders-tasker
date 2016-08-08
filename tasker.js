@@ -309,7 +309,7 @@ if (typeof(Number.prototype.toRad) === "undefined") {
     }
 }
 
-var threshold = 300; // meters
+var threshold = 75; // meters
 
 var orgObj = JSON.parse(global('HTTPD'));
 var locations = []; // must do it this way
@@ -321,7 +321,7 @@ for(var i = 0; i < locations.length; i++) {
 
 //popup('TODO', locations[1], false, '', '', 2);
 
-getLocation( 'any' );
+// getLocation( 'any' );
 var lastFix = global( 'LOC' );
 
 for(var i = 0; i < locations.length; i++) {
